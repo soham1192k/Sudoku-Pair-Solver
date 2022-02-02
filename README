@@ -1,0 +1,23 @@
+Requirements:
+1. python3
+2. minisat [pip3 install minisat]
+
+Makefile already runs "pip3 install -r requirements.txt"
+
+Generates and solves k-sudoku pair, where:
+-> each sudoku has to satisfy individual sudoku constraints
+-> the corresponding cells in the two sudokus cannot contain the same number.
+
+Steps:
+
+Generator:
+1. Go to /Generator and run "make"
+2. Provide k as input
+3. Wait..
+4. Output will be in "output.csv" file
+5. To clean the stray files, run "make clean"
+
+Solver:
+1. Go to /Solver and run "make"
+2. Output will be in "output.txt" file
+3. To clean stray files, run "make clean"
